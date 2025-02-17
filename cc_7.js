@@ -15,3 +15,15 @@ function calculateHourlyWage(salary, hoursPerWeek) {
 
 console.log(`Hourly Wage: $${calculateHourlyWage(52000, 40)}`); // Expected output: "Hourly Wage: $25.00"
 console.log(`Hourly Wage: $${calculateHourlyWage(75000, 35)}`); // Expected output: "Hourly Wage: $41.21"
+
+// Task 3
+const calculateLoyaltyDiscount = (amount, years) => {
+    let loyaltyDiscount = 0
+    if (years >= 5) loyaltyDiscount = amount *.85;
+     else if (years >= 3) loyaltyDiscount = amount *.90;
+     else if (years < 3) loyaltyDiscount = amount * .95;
+        
+     console.log(`Discounted Price: $${loyaltyDiscount.toFixed(2)}`);
+}
+calculateLoyaltyDiscount(100, 6); // Expected output: "Discounted Price: $85.00"
+calculateLoyaltyDiscount(200, 2); // Expected output: "Discounted Price: $190.00"
