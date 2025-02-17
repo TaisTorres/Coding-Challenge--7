@@ -48,3 +48,14 @@ function calculateLoanInterest(principal, rate, years) {
 }
 calculateLoanInterest(1000, 0.05, 3); // Expected output: "Total Interest: $150.00"
 calculateLoanInterest(5000, 0.07, 5); // Expected output: "Total Interest: $1750.00"
+
+//Task 6
+let transactions = [500, 1200, 3000, 800, 2200];
+
+function filterHighValueTransactions( transactions, amount) {
+    let highValue = transactions.filter(amount);
+    console.log(`High Value Orders: ${highValue}`);
+}
+
+filterHighValueTransactions(transactions, amount => amount > 1000);
+// Expected output: [1200, 3000, 2200]
